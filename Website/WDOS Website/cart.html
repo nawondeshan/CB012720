@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Cart - Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="Logo.webp" alt="Nature's Cart Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="vegetables.html">Vegetables</a></li>
+            <li><a href="dairy.html">Dairy Products</a></li>
+            <li><a href="cosmetics.html">Cosmetics</a></li>
+            <li><a href="cart.html">Order</a></li>
+            <li><a href="registration.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header section -->
+    <header>
+        <h1>Order Your Products</h1>
+        <p>Fill out the form below to order your products and add them to your shopping cart.</p>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <form action="submit_order.html" method="post" class="order-form">
+            
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </fieldset>
+            
+            <!-- Fieldset grouping order detail fields -->
+            <fieldset>
+                <legend>Order Details</legend>
+                <label for="product">Product:</label>
+                <select id="product" name="product" required>
+                    <option value="carrots">Carrots</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="delivery">Delivery Method:</label>
+                <select id="delivery" name="delivery" required>
+                    <option value="pickup">Pickup</option>
+                    <option value="delivery">Delivery</option>
+                </select>
+            </fieldset>
+            
+            <!-- Payment information field -->
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label for="card">Card Number:</label>
+                <input type="text" id="card" name="card" required>
+
+                <label for="expiry">Expiry Date:</label>
+                <input type="month" id="expiry" name="expiry" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </fieldset>
+
+            <button type="submit">Add to Cart</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Nature's Cart. All rights reserved.</p>
+    </footer>
+</body>
+</html>
