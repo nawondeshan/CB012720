@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Cart - Order</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/Logo.webp" alt="Nature's Cart Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="dairy.html">Dairy Products</a></li>
+            <li><a href="vegetables.html">Vegetables</a></li>
+            <li><a href="fruits.html">Fruits</a></li>
+            <li><a href="meats.html">Meats & Seafood</a></li>
+            <li><a href="baking.html">Baking & Cooking Ingredients</a></li>
+            <li><a href="cosmetics.html">Cosmetics</a></li>
+            <li><a href="cart.html">Order</a></li>
+            <li><a href="registration.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Order Your Groceries</h1>
+    </header>
+
+    <main>
+        <section id="fruits">
+            <h2>Fruits</h2>
+        </section>
+
+        <section id="vegetables">
+            <h2>Vegetables</h2>
+        </section>
+
+        <section id="dairy">
+            <h2>Dairy Products</h2>
+        </section>
+
+        <section id="meatSeafood">
+            <h2>Meat and Seafood</h2>
+        </section>
+
+        <section id="bakingCooking">
+            <h2>Baking and Cooking Ingredients</h2>
+        </section>
+
+        <section id="cosmetics">
+            <h2>Cosmetics and Skincare</h2>
+        </section>
+
+        <button id="addToFavorites">Add to Favorites</button>
+        <button id="applyFavorites">Apply Favorites</button>
+        <button id="clearCart">Clear Cart</button>
+
+        <table id="cart">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be dynamically added here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td id="totalPrice">Rs0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <a href="buy.html"><button id="buyNow">Buy Now</button></a>
+    </main>
+
+    <script src="order.js"></script>
+</body>
+
+</html>

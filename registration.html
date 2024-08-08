@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Cart - Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/Logo.webp" alt="Nature's Cart Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="dairy.html">Dairy Products</a></li>
+            <li><a href="vegetables.html">Vegetables</a></li>
+            <li><a href="fruits.html">Fruits</a></li>
+            <li><a href="meats.html">Meats & Seafood</a></li>
+            <li><a href="baking.html">Baking & Cooking Ingredients</a></li>
+            <li><a href="cosmetics.html">Cosmetics</a></li>
+            <li><a href="cart.html">Order</a></li>
+            <li><a href="registration.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header section with title and introduction -->
+    <header>
+        <h1>Register for Our Loyalty Program</h1>
+        <p>Join our loyalty program to enjoy exclusive benefits and rewards.</p>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <section class="registration-form">
+            <h2>Loyalty Program Registration</h2>
+            
+            <form action="submit-loyalty-form.html" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br>
+                
+                <label for="loyalty-scheme">Choose a Loyalty Scheme:</label>
+                <select id="loyalty-scheme" name="loyalty-scheme" required>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                    <option value="platinum">Platinum</option>
+                </select>
+                
+                <!-- Registration button -->
+                <button type="submit">Register</button>
+                
+                <!-- Login link -->
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </form>
+        </section>
+    </main>
+    
+
+        <!-- Benefits displaying section -->
+        <section class="loyalty-benefits">
+            <h2>Benefits of Our Loyalty Schemes</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Silver</h3>
+                    <ul>
+                        <li>5% discount on all purchases</li>
+                        <li>Exclusive early access to sales</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit">
+                    <h3>Gold</h3>
+                    <ul>
+                        <li>10% discount on all purchases</li>
+                        <li>Free delivery on orders over $50</li>
+                        <li>Exclusive early access to sales</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit">
+                    <h3>Platinum</h3>
+                    <ul>
+                        <li>15% discount on all purchases</li>
+                        <li>Free delivery on all orders</li>
+                        <li>Exclusive early access to sales</li>
+                        <li>Personal shopping assistant</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Nature's Cart. All rights reserved.</p>
+    </footer>
+</body>
+</html>

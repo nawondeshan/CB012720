@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/Logo.webp" alt="Nature's Cart Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="dairy.html">Dairy Products</a></li>
+            <li><a href="vegetables.html">Vegetables</a></li>
+            <li><a href="fruits.html">Fruits</a></li>
+            <li><a href="meats.html">Meats & Seafood</a></li>
+            <li><a href="baking.html">Baking & Cooking Ingredients</a></li>
+            <li><a href="cosmetics.html">Cosmetics</a></li>
+            <li><a href="cart.html">Order</a></li>
+            <li><a href="registration.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Order Confirmation</h1>
+    </header>
+
+    <main>
+        <section id="confirmation-details">
+            <h2>Thank you for your order, <span id="customer-name"></span>!</h2>
+            <p>✅ Your order is confirmed and will be delivered by <span id="delivery-date"></span>.</p>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Get query parameters from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const customerName = urlParams.get("name");
+    const deliveryDate = urlParams.get("deliveryDate");
+
+    // Update the confirmation page with the customer's details
+    document.getElementById("customer-name").textContent = customerName;
+    document.getElementById("delivery-date").textContent = deliveryDate;
+});
+
+    </script>
+</body>
+
+</html>
